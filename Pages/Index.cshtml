@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+       
+        @foreach (var Article in Model.Articles)
+        {
+            <p>ID: @Article.ID</p>
+            <p>Author Name: @Article.ArticleAuthorName</p>
+            <p>Category: @Article.ArticleCategory</p>
+            <p>Title: @Article.ArticleTitle</p>
+            <p>Post: @Article.ArticlePost</p>
+            <p>Post: @Article.PublishDate</p>
+            <hr />
+        }
+    </div>

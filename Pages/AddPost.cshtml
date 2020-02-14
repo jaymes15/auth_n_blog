@@ -1,0 +1,17 @@
+﻿@page
+@model loggingnblog.AddPostModel
+@{
+    ViewData["Title"] = "AddPost";
+}
+
+<h1>Add Post</h1>
+
+<form method="post">
+    <input type="text" asp-for="Article.ArticleAuthorName" placeholder="Author Name" />
+    <input type="text" asp-for="Article.ArticleCategory" placeholder="Article Category" />
+    <input type="text" asp-for="Article.ArticleTitle" placeholder="Article Title" />
+    <input type="text" asp-for="Article.ArticlePost" placeholder="Post" />
+    <button type="submit">Submit</button>
+
+
+</form>
